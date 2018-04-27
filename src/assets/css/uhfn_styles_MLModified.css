@@ -1,0 +1,1061 @@
+﻿/*--- Main Content override class for validation. Delete after validation ---*/
+.TopicContent{
+    margin-left: 80px;
+    margin-top: 2px;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* -------------------------------- 
+iTalent digital Copyright (c) 2018
+v1.0 | 20171215
+
+UHF Styles
+-------------------------------- */
+
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #3e454c;
+  background-color: #fff;
+}
+body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+a {
+  color: #1784c7;
+  text-decoration: none;
+}
+
+input {
+  font-size: 1.6rem;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+ /* display: none; Must not turn off Flare Search */
+}
+
+
+.uhf-content.container {
+    max-height: 80px;
+}
+
+
+
+/* -------------------------------- 
+
+Fonts
+
+-------------------------------- */
+
+body,html{
+  font-family: 'GothamMedium';
+  font-weight: 300;
+}
+
+/* Gotham fonts */
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('https://community.anaplan.com/html/assets/gotham-medium.eot'); /* IE9 Compat Modes */
+  src: url('https://community.anaplan.com/html/assets/gotham-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://community.anaplan.com/html/assets/gotham-medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://community.anaplan.com/html/assets/gotham-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* -------------------------------- 
+
+Main Page Content
+
+-------------------------------- */
+.content-wrapper p{
+  margin-top:30px;
+  text-align:justify;
+}
+.um-sub-menu li:last-child{
+	padding-top:20px;
+	padding-bottom: 5px
+}
+
+.content-wrapper {
+  padding: 45px 5% 13em;
+}
+.content-wrapper h1 {
+  text-align: center;
+  padding: 3em 0;
+  font-size: 2rem;
+}
+.um-main-content::before {
+  /* never visible - used to check MQ in jQuery */
+  /*display: none; wiping out the search???*/
+  content: 'mobile';
+}
+
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    margin-left: 110px;
+    padding-top: 55px;
+  }
+  .content-wrapper h1 {
+    padding: 4em 0;
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+  .um-main-content::before {
+    content: 'tablet';
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .content-wrapper {
+    margin-left: 45px;
+  }
+  .um-main-content::before {
+    content: 'desktop';
+  }
+}
+
+
+/* -------------------------------- 
+
+Header
+
+-------------------------------- */
+#UM-leftNav li.join a,
+li.join a{
+	color:#fff;
+	font-size:16px;
+}
+#UM-leftNav li.sign-in a,
+li.sign-in a{
+	color:#00c7b2;
+	font-size:16px;
+}
+.uhf-nav{
+	margin-top:18px
+}
+.uhf-nav .join{ 
+  width: 140px;
+  height: 40px;
+  background-color: #00c7b2;
+  border: solid 2px #00c7b2;
+  color:#fff;
+  text-align:center;
+}
+.uhf-nav .sign-in{
+  width: 140px;
+  height: 40px;
+  background-color: #fff;
+  border: solid 2px #00c7b2;
+  color:#fff;
+  text-align:center;
+}
+
+.uhf-search input {
+	background-color: #eff1f3;
+	width:100%;
+	height:40px;
+}
+input[type=search] {
+    /*-webkit-appearance: none; dont disable search.*/
+    color: #6c7782;
+}
+
+.uhf-main-header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.uhf-main-header::after {
+  clear: both;
+  /*content: ""; is this wiping out the search */
+  display: table;
+}
+.uhf-logo {
+   float: left;
+   display: block;
+}
+.uhf-logo img {
+    display: block;
+    width: 277px;
+    height:75px;
+}
+
+
+.nav-trigger {
+  /* navigation trigger - visible on mobile devices only */
+  float: right;
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-right: 5%;
+  /* hide text */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+}
+.nav-trigger span, .nav-trigger span::before, .nav-trigger span::after {
+  /* hamburger icon in CSS */
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 45px;
+  background: #6c7782;
+}
+.nav-trigger span {
+  /* line in the center */
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -2px;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.nav-trigger span::before, .nav-trigger span::after {
+  /* other 2 lines */
+  content: '';
+  right: 0;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  transition: transform 0.2s;
+}
+.nav-trigger span::before {
+  /* menu icon top line */
+  top: -9px;
+}
+.nav-trigger span::after {
+  /* menu icon bottom line */
+  top: 9px;
+}
+.nav-trigger.nav-is-visible span {
+  /* hide line in the center */
+  background: rgba(255, 255, 255, 0);
+}
+.nav-trigger.nav-is-visible span::before, .nav-trigger.nav-is-visible span::after {
+  /* keep visible other 2 lines */
+  background: #6c7782;
+}
+.nav-trigger.nav-is-visible span::before {
+  -webkit-transform: translateX(4px) translateY(-12px) rotate(45deg);
+  -moz-transform: translateX(4px) translateY(-12px) rotate(45deg);
+  -ms-transform: translateX(4px) translateY(-12px) rotate(45deg);
+  -o-transform: translateX(4px) translateY(-12px) rotate(45deg);
+  transform: translateX(4px) translateY(-12px) rotate(45deg);
+}
+.nav-trigger.nav-is-visible span::after {
+  -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -moz-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -ms-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -o-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  transform: translateX(4px) translateY(2px) rotate(-45deg);
+}
+
+.uhf-search {
+  position: relative;
+  margin: 1.2em 3% 0.6em;
+}
+.uhf-search.is-hidden {
+  opacity: 0;
+}
+.uhf-search::before {
+  /* lens icon */
+  content: '';
+  position: absolute;
+  right: 35px;
+  top:45%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+  background: url(https://community.anaplan.com/html/assets/button_search.svg) no-repeat 0 0;
+}
+.uhf-search input {
+  padding-left: 18px;
+  padding-right:70px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.uhf-search input:focus {
+  outline: none;
+}
+.join:hover{
+	background-color:#1fad9e;
+	transition: all 0.5s ease;
+}
+.sign-in:hover{
+	background-color:#fbfbfb;
+	transition: all 0.5s ease;
+}
+@media only screen and (min-width: 768px) {
+  .uhf-search {
+    float: left;
+    display: inline-block;
+  }
+  .uhf-search.is-hidden {
+    /* reset style */
+    opacity: 1;
+  }
+  .uhf-search::before {
+    right: 1.5em;
+  }
+  .uhf-search input {
+	border: none;
+    color: #000;
+    background-color: #eff1f3;
+  }
+  .uhf-search input::-webkit-input-placeholder {
+    color: #777c81;
+  }
+  .uhf-search input::-moz-placeholder {
+    color: #777c81;
+  }
+  .uhf-search input:-moz-placeholder {
+    color: #777c81;
+  }
+  .uhf-search input:-ms-input-placeholder {
+    color: #777c81;
+  }
+  .uhf-main-header {
+    position: fixed;
+    height: 80px;
+  }
+  .nav-trigger {
+    /*display: none; is this wiping out the menu and search? */
+  }
+
+}
+
+/* -------------------------------- 
+
+Top Navigation
+
+-------------------------------- */
+.uhf-nav {
+  /* top nav - not visible on mobile devices */
+  /* display: none; is this wiping out the menu and search? */
+}
+@media only screen and (max-width: 768px) {
+	.uhf-search {
+		position: relative;
+		margin: 0.5em 0%;
+	}
+	.uhf-nav .sign-in,
+	.uhf-nav .join{
+		width:90px
+	}
+	.uhf-logo img {
+		display: block;
+		width: 207px;
+		height: 54px;
+	}
+	.uhf-nav {
+        margin-top:9px
+	}
+}
+.uhf-top-nav > li > a::before {
+  /* reset style */
+  /* display: none; is this wiping out the menu and search? */
+}
+.uhf-top-nav > li a {
+  padding: 1em 5% !important;
+}
+.uhf-top-nav img {
+  /* avatar image */
+  position: absolute;
+  left: 1.8em;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  /*display: none; is this wiping out the menu and search? */
+}
+@media only screen and (min-width: 768px) {
+  .uhf-nav {
+    display: block;
+    float: right;
+    height: 100%;
+  }
+  .uhf-top-nav {
+    height: 100%;
+  }
+  .uhf-top-nav a {
+    display: block;
+    font-size: 1.4rem;
+  }
+  .uhf-top-nav > li {
+    display: inline-block;
+    margin-right: 5px;
+    height: 100%;
+  }
+  .uhf-top-nav > li:last-of-type {
+    margin-right: 0;
+  }
+  .uhf-top-nav > li a {
+    padding: 0.7em .6em !important;
+  }
+  .uhf-top-nav > li a:hover{
+	text-decoration:none
+  }
+  .uhf-top-nav img {
+    display: block;
+  }
+}
+
+
+/* -------------------------------- 
+
+Sidebar
+
+-------------------------------- */
+
+li.um-root-menu > a:hover{
+	text-decoration:none
+}
+.um-side-nav {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding: 75px 0 0;
+  background-color: #6c7782;;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.um-side-nav.nav-is-visible {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s;
+  max-height: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.um-side-nav > ul:last-of-type {
+  padding-bottom: 360px;
+}
+.um-side-nav a {
+  display: block;
+  padding: 1em 5%;
+}
+
+#UM-leftNav .um-side-nav a {
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+}
+.um-side-nav ul.uhf-top-nav > li:last-of-type > a {
+  border-bottom: none;
+}
+.um-side-nav > ul > li > a {
+  padding-left: calc(5% + 24px);
+  border-bottom: 1px solid #485058
+}
+.um-side-nav > ul > li > a::before {
+  /* icon before item name */
+  position: absolute;
+  content: '';
+  left: 5%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#UM-leftNav .panel.panel-default{
+	background-color: #0b2265;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+#UM-leftNav .panel-heading{
+	padding:0
+}
+#UM-leftNav .panel-default>.panel-heading {
+    color: unset;
+    background-color: #0b2265;
+    border-color:  #0b2265;
+}
+#UM-leftNav .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color:  #0b2265;
+	padding:0 20px;
+}
+#UM-leftNav .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: unset;
+}
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f055";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f056";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+#UM-leftNav .panel-group{
+	margin-bottom:0
+}
+#UM-leftNav .um-sub-menu .panel-group li:last-child {
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+
+@media only screen and (min-width: 768px) {
+  .um-side-nav {
+    position: relative;
+    float: left;
+    /* top: auto; */
+    min-height: 100vh;
+    padding-top: 80px;
+	padding-bottom:145px;
+    /* reset style */
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    max-height: none;
+  }
+  .um-side-nav.nav-is-visible {
+    box-shadow: none;
+  }
+  .um-side-nav.is-fixed {
+    position: fixed;
+  }
+  .um-side-nav > ul {
+    /* reset style */
+    padding: 0;
+  }
+
+  .um-side-nav a {
+    font-size: 12px;
+    text-align: center;
+  }
+  .um-side-nav > ul > li > a {
+	padding: calc(2.2em + 23px) 0 2.1em;
+  }
+  .um-side-nav > ul > li > a::before {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0.8em;
+  }
+  .uhf-logo img{
+	width:200px
+   }
+   .uhf-nav .join,
+   .uhf-nav .sign-in{
+	  width: 90px;
+      margin-right: 0px;
+   }
+	.um-root-menu > a {
+		height: 79px;
+	}
+}
+@media only screen and (min-width: 1170px) {
+  .um-side-nav > ul {
+    padding: 0.6em 0;
+  }
+   .uhf-nav .join,
+   .uhf-nav .sign-in{
+	 width:140px
+   }
+}
+
+.um-root-menu ul {
+  position: relative;
+  width: 100%;
+  /* display: none; is this wiping out the menu and search? */
+  background-color: #0b2265;
+}
+.um-root-menu > a::after {
+  /* arrow icon */
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  right: 5%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.um-root-menu.selected > ul {
+  display: block;
+}
+.um-root-menu.selected > a::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+ul.leftNav {
+    background-color: #6c7782;
+}
+
+ul.um-sub-menu li {
+    line-height: 5px;
+}
+ul.leftNav{
+    margin:0
+}
+
+
+/* -------------------------------- 
+
+Footer
+
+-------------------------------- */
+
+footer#UHF-footer .uhf-links{
+    height: 108px;
+    background-color: #0b2265;
+}
+footer#UHF-footer .uhf-copyright{
+    height: 37px;
+    background-color: #6c7782;
+	font-size:12px
+}
+footer#UHF-footer .footer-logo img{
+    width: 160px;
+    height: 34px;
+	float: left;
+}
+
+footer#UHF-footer .uhf-links a{
+	color:#fff;
+	font-size: 16px;
+}
+footer#UHF-footer .uhf-copyright a{
+	color:#fff;
+}
+footer#UHF-footer .uhf-links span {
+    margin-left: 25px;
+}
+
+footer#UHF-footer .uhf-copyright div span{
+	margin-left:10px;
+	padding-left:10px;
+	border-left:1px solid #fff;
+	display:inline-block;
+}
+footer#UHF-footer .uhf-copyright div span:first-child{
+	border-left: 0 solid #fff;
+}
+footer#UHF-footer .anaplan-copyrights{
+    float:right	
+}
+footer#UHF-footer .uhf-info > div{
+	float: right
+}
+footer#UHF-footer .uhf-links .col-md-6{
+	padding:0
+}
+footer#UHF-footer .anaplan-copyrights{
+	margin-top: 10px;
+}
+@-moz-document url-prefix() { 
+	ul.leftNav{
+   /* -moz-box-orient: vertical;
+    overflow: -moz-scrollbars-none;		*/
+	}
+
+}
+
+/*----MS Edge Browser CSS Start----*/
+
+@supports (-ms-ime-align: auto) {
+   /* Microsoft EdgeV13&14 CSS styles go here */
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  .um-root-menu {
+    transition: all 0.5s ease;
+  }
+  .um-root-menu ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 297px;
+    padding: 0;
+  }
+  .um-root-menu ul a {
+    text-align: left;
+    border: none;
+    padding: 1em;
+	font-size:12px;
+  }
+  .no-touch .um-root-menu ul a:hover {
+    color: #1784c7;
+  }
+  .um-root-menu > a::after {
+    /* display: none;     is this wiping out the menu and search? */
+
+  }
+  .um-side-nav .um-root-menu.selected > a {
+    /* focus state -> show sub pages */
+    /*background-color: #33383e;*/
+  }
+  .uhf-top-nav .um-root-menu {
+    position: relative;
+    background-color: #2c3136;
+  }
+  .uhf-top-nav .um-root-menu > a {
+    height: 100%;
+    padding: 0 calc(1.8em + 22px) 0 calc(1.8em + 26px) !important;
+    line-height: 55px;
+  }
+  .uhf-top-nav .um-root-menu > a::after {
+    display: block;
+    right: 1.8em;
+  }
+  .uhf-top-nav .um-root-menu ul {
+    background-color: #1c1f22;
+    width: 200px;
+    top: 100%;
+    right: 0;
+    left: auto;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  .uhf-top-nav .um-root-menu ul a {
+    padding-left: 18px !important;
+  }
+  #UHF-header .uhf-content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer#UHF-footer{	
+    position: fixed;
+    bottom: -149px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1050;
+    text-align: center;
+  }
+  .uhf-links .container{
+	height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1170px) {
+  .um-root-menu > ul {
+    z-index: 1;
+  }
+  .um-root-menu ul a {
+    padding-left: 18px;
+  }
+
+  .no-touch .um-side-nav .um-root-menu:hover > ul, .um-side-nav .um-root-menu.hover > ul {
+    /* show subnavigation on hover */
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .uhf-search input {    
+	width: 491px;
+	height:40px;
+  }
+  .uhf-logo img {
+    width: 277px;
+ }
+}
+
+@media only screen and (max-width: 767px) {
+	.um-side-nav.is-fixed{
+		bottom:unset !important;
+	}
+	.uhf-top-nav{
+		margin:30px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.uhf-top-nav .join{ 
+	  width: 140px;
+	  height: 40px;
+	  background-color: #00c7b2;
+	  border: solid 2px #00c7b2;
+	  color:#fff;
+	  text-align:center;
+	  display:inline-block;
+	  margin-right:10px;
+	}
+	.uhf-top-nav .sign-in{
+	  width: 140px;
+	  height: 40px;
+	  background-color: #fff;
+	  border: solid 2px #00c7b2;
+	  color:#fff;
+	  text-align:center;
+	  display:inline-block;
+	}
+	.uhf-search::before{
+	  top: 15%;	
+	}
+  	.um-root-menu ul{
+	  position:static
+	}
+	.um-side-nav > ul:last-of-type {
+	  padding-bottom: 0;
+	}
+	.um-side-nav{
+	    width:100%
+	}
+	.uhf-logo{
+	    float:right;
+		margin-right: 30px;
+		margin-top:15px
+	}
+	.nav-trigger{
+	    float:left;
+	    margin-top: 13px;
+	}
+	.um-root-menu ul{
+	    position:static
+	}
+	.uhf-logo{
+	    float:right;
+		margin-right: 12px;
+	}
+	.nav-trigger{
+	    float:left;
+	}
+	.um-side-nav > ul > li > a::before,
+	.um-side-nav > ul > li.um-root-menu > a::before,
+	.um-root-menu > a::after{
+	  background:none
+	}
+	#UM-leftNav .um-sub-menu > li:first-child{
+	  display:none
+	}
+	.um-side-nav > ul > li > a {
+		padding-left: calc(2% + 24px);
+		border-bottom: 1px solid #373d44;
+	    font-size:16px !important;
+	}
+	ul.um-sub-menu li {
+		margin-left:15px
+	}
+	.um-side-nav.nav-is-visible{
+	  background-color:#fff
+	}
+
+	footer#UHF-footer {
+		border-top: 1px solid #fff;
+	}
+	.uhf-top-nav > li a {
+		padding: 0.7em 5% !important;
+	}
+	footer#UHF-footer .uhf-copyright{
+		height:97px
+	}
+	footer#UHF-footer .uhf-links{
+		height:207px
+	}
+	footer#UHF-footer .uhf-copyright div span{
+		margin-bottom:10px
+	}
+	.uhf-logo img{
+		width: 277px;
+	}
+	.uhf-search form{
+		margin-top: 30px;
+		padding: 0 20px;
+		border-bottom: 1px solid #99a4ae;
+        padding-bottom: 30px;
+	}
+	.uhf-content.container{
+		padding:0;
+		margin:0;
+	}
+	.uhf-main-header{
+		box-shadow:none;
+		border-bottom: 1px solid #99a4ae;
+	}
+	footer#UHF-footer .footer-logo img,
+	footer#UHF-footer .uhf-info > div{
+		margin-top:30px
+	}
+	footer#UHF-footer .uhf-links span {
+		margin-right: 35px;
+		margin-bottom: 20px;
+		display: inline-block;
+		margin-left:0;
+	}
+	footer#UHF-footer .uhf-copyright div span:first-child {
+		color: #fff;
+	}
+	footer#UHF-footer .uhf-copyright div span:nth-child(2),
+	footer#UHF-footer .uhf-copyright div span:nth-child(5){
+		border-left:0
+	}
+	footer#UHF-footer .uhf-copyright div span:nth-child(1){
+		 width:100%;
+		 display:block;
+	}
+	footer#UHF-footer .uhf-copyright div span {
+		margin-left: 0;
+		padding-right: 5px;
+	    padding-left: 0;
+	}
+	#anaplan .scrolltotop{
+		right:30px
+	}
+	footer#UHF-footer .uhf-info > div,
+	footer#UHF-footer .anaplan-copyrights{
+		float:left;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.uhf-main-header{
+	   height:80px
+	}
+	.um-side-nav{
+		position: fixed;
+		height: 100%;
+	}
+	ul.leftNav {
+		-ms-overflow-style: none;  // IE 10+
+		overflow: -moz-scrollbars-none ;  // Firefox
+		overflow:-moz-hidden-unscrollable; 
+	}
+	/*ul.leftNav::-moz-scrollbars {display:none;}
+	ul.leftNav::-moz-scrollbar {
+		display: none; 
+	}
+    ul.leftNav { overflow: -moz-scrollbars-none; }
+	ul.leftNav { -moz-appearance: menuimage; }*/
+	
+	ul.leftNav::-webkit-scrollbar { 
+		/*display: none;  // Safari and Chrome is this wiping out the menu and search? */
+	}
+	
+	ul.leftNav{
+		width: 80px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+	ul ul {
+	  width: 200px;
+	  list-style:none;
+	  padding:0
+	}
+	li {
+	  position: static;
+	}
+	li .um-sub-menu {
+	  position: absolute;
+	  z-index: 10;
+	  display: none;
+	}
+	li:hover > .um-sub-menu {
+	  display: block;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	footer#UHF-footer {
+		position: fixed;
+	}
+}
+
+#anaplan{
+	 position:relative
+}
+/*IE css*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+
+}

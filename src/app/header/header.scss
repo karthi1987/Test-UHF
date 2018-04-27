@@ -1,0 +1,69 @@
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    .uhf-content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      .uhf-logo {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .uhf-logo-img {
+        display: flex;
+        width: 100%;
+        height: 30px;
+      }
+      }
+      .uhf-search {
+        display: flex;
+        position: relative;
+        &:before {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        height: 16px;
+        width: 16px;
+        }
+      input {
+          border: none;
+        background: #eff1f3;
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+        font-weight: 600;
+        -webkit-appearnace: none;
+        -moz-appearnace: none;
+        padding: 0 40px 0 18px;
+          color: #6c7782;
+      }
+      .btn-search {
+        color: #333;
+        background: transparent;
+        border-color: transparent;
+        width: 45px;
+        height: 38px;
+        position: absolute;
+        right: 0px;
+        top: 2px;
+        cursor: pointer;
+      }
+    }
+    }
+  .title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+}

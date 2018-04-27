@@ -1,0 +1,187 @@
+/* -------------------------------- 
+iTalent digital
+v1.0 | 20171215
+
+LeftSide Navigation Images and Color codes
+
+-------------------------------- */
+/*Home*/
+.um-home > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_home.svg) no-repeat 0 0; }
+
+/*Topics*/
+.um-topics > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_topics.svg) no-repeat 0 0; }
+
+/*Training*/
+.um-training > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_training.svg) no-repeat 0 0; }
+
+/*Master Anaplanner*/
+.um-masterAnaplanner > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon-master-anaplanner.svg) no-repeat 0 0; }
+
+/*Networking*/
+.um-newsNetworking > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_networking.svg) no-repeat 0 0; }
+
+/*Support*/
+.um-support > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_support.svg) no-repeat 0 0; }
+
+/*Partners*/
+.um-partners > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_partners.svg) no-repeat 0 0; }
+
+/*Employees*/
+.um-anaplaEmployees > a::before {
+  background: url(https://community.anaplan.com/html/assets/icon_employees.svg) no-repeat 0 0; }
+
+/*To change the width and height for SVG leftside Navigation*/
+.um-side-nav > ul > li > a::before {
+  width: 32px;
+  height: 34px; }
+
+/* -------------------------------- 
+
+LeftSide Navigation Color codes
+
+-------------------------------- */
+.um-sub-menu .um-title a {
+  font-size: 18px !important; }
+
+/* -------------------------------- 
+
+Home
+
+-------------------------------- */
+.safetyOrange.selected {
+  /*Selected bg-color*/
+  background-color: #ff6e00; }
+
+.safetyOrange .um-title {
+  /*SubTitle bg-color*/
+  background-color: #ff6e00; }
+
+.safetyOrange.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #ff6e00; }
+
+/* -------------------------------- 
+
+Topics
+
+-------------------------------- */
+.robinEggBlue.selected {
+  /*Selected bg-color*/
+  background-color: #00c7b2; }
+
+.robinEggBlue .um-title {
+  /*SubTitle bg-color*/
+  background-color: #00c7b2; }
+
+.robinEggBlue.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #00c7b2; }
+
+/* -------------------------------- 
+
+Training
+
+-------------------------------- */
+.frenchRose.selected {
+  /*Selected bg-color*/
+  background-color: #f04d98; }
+
+.frenchRose .um-title {
+  /*SubTitle bg-color*/
+  background-color: #f04d98; }
+
+.frenchRose.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #f04d98; }
+
+/* -------------------------------- 
+
+Master Anaplanner
+
+-------------------------------- */
+.irisBlue.selected {
+  /*Selected bg-color*/
+  background-color: #00a9e0; }
+
+.irisBlue .um-title {
+  /*SubTitle bg-color*/
+  background-color: #00a9e0; }
+
+.irisBlue.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #00a9e0; }
+
+/* -------------------------------- 
+
+Networking
+
+-------------------------------- */
+.citrus.selected {
+  /*Selected bg-color*/
+  background-color: #92D400; }
+
+.citrus .um-title {
+  /*SubTitle bg-color*/
+  background-color: #92D400; }
+
+.citrus.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #92D400; }
+
+/* -------------------------------- 
+
+Support
+
+-------------------------------- */
+.deepLilac.selected {
+  /*Selected bg-color*/
+  background-color: #a44dc4; }
+
+.deepLilac .um-title {
+  /*SubTitle bg-color*/
+  background-color: #a44dc4; }
+
+.deepLilac.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #a44dc4; }
+
+/* -------------------------------- 
+
+Partners
+
+-------------------------------- */
+.alizarin.selected {
+  /*Selected bg-color*/
+  background-color: #ED2939; }
+
+.alizarin .um-title {
+  /*SubTitle bg-color*/
+  background-color: #ED2939; }
+
+.alizarin.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #ED2939; }
+
+/* -------------------------------- 
+
+Employees
+
+-------------------------------- */
+.royalBlue.selected {
+  /*Selected bg-color*/
+  background-color: #3d7edb; }
+
+.royalBlue .um-title {
+  /*SubTitle bg-color*/
+  background-color: #3d7edb; }
+
+.royalBlue.um-root-menu:hover {
+  /*hover bg-color*/
+  background-color: #3d7edb; }

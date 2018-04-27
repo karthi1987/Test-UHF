@@ -1,0 +1,148 @@
+/* -------------------------------- 
+
+Anaplan Copyright (c) 2018
+v1.0 | 20171215
+
+LeftSide Navigation Images and Color codes
+
+-------------------------------- */
+/*Home*/
+.um-home .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_home.svg) no-repeat 0 0; }
+
+/*Topics*/
+.um-topics .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_topics.svg) no-repeat 0 0; }
+
+/*Training*/
+.um-training .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_training.svg) no-repeat 0 0; }
+
+/*Master Anaplanner*/
+.um-masterAnaplanner .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon-master-anaplanner.svg) no-repeat 0 0; }
+
+/*Networking*/
+.um-newsNetworking .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_networking.svg) no-repeat 0 0; }
+
+/*Support*/
+.um-support .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_support.svg) no-repeat 0 0; }
+
+/*Partners*/
+.um-partners .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_partners.svg) no-repeat 0 0; }
+
+/*Employees*/
+.um-anaplaEmployees .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_employees.svg) no-repeat 0 0; }
+
+/*To change the width and height for SVG leftside Navigation*/
+.um-side-nav .menu-icon::before {
+  width: 32px;
+  height: 34px; }
+
+/* -------------------------------- 
+
+LeftSide Navigation Color codes
+
+-------------------------------- */
+#anaplan-menu .um-sub-menu .um-title a {
+  font-size: 18px; }
+
+/* -------------------------------- 
+
+Home
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.safety-orange.selected,
+.safety-orange.keep-selected,
+.safety-orange .um-title,
+.safety-orange.um-root-menu:hover {
+  border-top: 4px solid #ff6e00; }
+
+/* -------------------------------- 
+
+Topics
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.robin-egg-blue.selected,
+.robin-egg-blue.keep-selected,
+.robin-egg-blue .um-title,
+.robin-egg-blue.um-root-menu:hover {
+  border-top: 4px solid #00c7b2; }
+
+/* -------------------------------- 
+
+Training
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.french-rose.selected,
+.french-rose.keep-selected,
+.french-rose .um-title,
+.french-rose.um-root-menu:hover {
+  border-top: 4px solid #f04d98; }
+
+/* -------------------------------- 
+
+Master Anaplanner
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.iris-blue.selected,
+.iris-blue.keep-selected,
+.iris-blue .um-title,
+.iris-blue.um-root-menu:hover {
+  border-top: 4px solid #00a9e0; }
+
+/* -------------------------------- 
+
+Networking
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.citrus.selected,
+.citrus.keep-selected,
+.citrus .um-title,
+.citrus.um-root-menu:hover {
+  border-top: 4px solid #92D400; }
+
+/* -------------------------------- 
+
+Support
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.deep-lilac.selected,
+.deep-lilac.keep-selected,
+.deep-lilac .um-title,
+.deep-lilac.um-root-menu:hover {
+  border-top: 4px solid #a44dc4; }
+
+/* -------------------------------- 
+
+Partners
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.alizarin.selected,
+.alizarin.keep-selected,
+.alizarin .um-title,
+.alizarin.um-root-menu:hover {
+  border-top: 4px solid #ED2939; }
+
+/* -------------------------------- 
+
+Employees
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.royal-blue.selected,
+.royal-blue.keep-selected,
+.royal-blue .um-title,
+.royal-blue.um-root-menu:hover {
+  border-top: 4px solid #3d7edb; }

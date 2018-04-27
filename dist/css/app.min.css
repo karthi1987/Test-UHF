@@ -1,0 +1,953 @@
+/* -------------------------------- 
+
+Anaplan Copyright (c) 2018
+v1.0 | 20171215
+
+LeftSide Navigation Images and Color codes
+
+-------------------------------- */
+
+/*Home*/
+.um-home .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_home.svg) no-repeat 0 0;
+}
+/*Topics*/
+.um-topics .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_topics.svg) no-repeat 0 0;
+}
+/*Training*/
+.um-training .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_training.svg) no-repeat 0 0;
+}
+/*Master Anaplanner*/
+.um-masterAnaplanner .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon-master-anaplanner.svg) no-repeat 0 0;
+}
+/*Networking*/
+.um-newsNetworking .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_networking.svg) no-repeat 0 0;
+}
+/*Support*/
+.um-support .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_support.svg) no-repeat 0 0;
+}
+/*Partners*/
+.um-partners .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_partners.svg) no-repeat 0 0;
+}
+/*Employees*/
+.um-anaplaEmployees .menu-icon::before {
+  background: url(https://community.anaplan.com/html/assets/icon_employees.svg) no-repeat 0 0;
+}
+/*To change the width and height for SVG leftside Navigation*/
+.um-side-nav .menu-icon::before{
+  width: 32px;
+  height: 34px;
+}
+
+/* -------------------------------- 
+
+LeftSide Navigation Color codes
+
+-------------------------------- */
+
+#anaplan-menu .um-sub-menu .um-title a{
+  font-size:18px;
+}
+
+
+/* -------------------------------- 
+
+Home
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.safety-orange.selected,
+.safety-orange.keep-selected,
+.safety-orange .um-title,
+.safety-orange.um-root-menu:hover{
+  border-top: 4px solid #ff6e00;
+}
+
+/* -------------------------------- 
+
+Topics
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.robin-egg-blue.selected,
+.robin-egg-blue.keep-selected,
+.robin-egg-blue .um-title,
+.robin-egg-blue.um-root-menu:hover{
+  border-top: 4px solid #00c7b2;
+}
+
+
+/* -------------------------------- 
+
+Training
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.french-rose.selected,
+.french-rose.keep-selected,
+.french-rose .um-title,
+.french-rose.um-root-menu:hover{
+  border-top: 4px solid #f04d98;
+}
+
+
+
+/* -------------------------------- 
+
+Master Anaplanner
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.iris-blue.selected,
+.iris-blue.keep-selected,
+.iris-blue .um-title,
+.iris-blue.um-root-menu:hover{
+  border-top: 4px solid #00a9e0;
+}
+
+
+
+/* -------------------------------- 
+
+Networking
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.citrus.selected,
+.citrus.keep-selected,
+.citrus .um-title,
+.citrus.um-root-menu:hover{
+  border-top: 4px solid #92D400;
+}
+
+
+/* -------------------------------- 
+
+Support
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.deep-lilac.selected,
+.deep-lilac.keep-selected,
+.deep-lilac .um-title,
+.deep-lilac.um-root-menu:hover{
+  border-top: 4px solid #a44dc4; 
+}
+
+
+/* -------------------------------- 
+
+Partners
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.alizarin.selected,
+.alizarin.keep-selected,
+.alizarin .um-title,
+.alizarin.um-root-menu:hover{
+  border-top: 4px solid #ED2939;  
+}
+
+
+
+/* -------------------------------- 
+
+Employees
+
+-------------------------------- */
+/*Selected, SubTitle and hover bg-colors*/
+.royal-blue.selected,
+.royal-blue.keep-selected,
+.royal-blue .um-title,
+.royal-blue.um-root-menu:hover{
+  border-top: 4px solid #3d7edb;
+}
+/* -------------------------------- 
+
+Anaplan Copyright (c) 2018
+v1.0 | 20171215
+
+UHF Styles[unified header footer]
+-------------------------------- */
+
+
+/* -------------------------------- 
+ 
+Start: CSS for Anapedia classes to sync with UHF
+
+-------------------------------- */
+
+
+.off-canvas-wrapper-inner nav.title-bar .outer-row {
+	/* This code is added for to see the banner header */
+    margin-top: 70px;
+}
+.position-right {
+	top: 80px !important;
+}
+.title-bar.tab-bar.sticky.is-stuck.is-at-top{
+   top:80px !important
+}
+li.um-root-menu, .um-sub-menu li{
+    margin: 0;
+	padding: 0;
+}
+#anaplan-menu li {
+    list-style-type: none;
+}
+.main-section .topicContent {
+    margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+
+	.foundation-wrap .main-section,
+	.foundation-wrap .title-bar-container{
+		/* This code is added for to align the content left */
+		padding-left:0px;
+	}
+	div.item, div.itemContent {
+		/* This code is added for widgets height in mobile view */
+		min-height: 190px; 
+	}
+	#uhf-footer .footer-logo-img{
+	    width: 150px;
+	}
+	.sub-element {
+	    display: none;
+	}
+}
+
+/* -------------------------------- 
+
+End: CSS for Anapedia classes to sync with UH
+
+-------------------------------- */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body,html {
+  font-family: 'GothamMedium';
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #3e454c;
+  background-color: #fff;
+  line-height: 1;
+}
+
+body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+a {
+  color: #1784c7;
+  text-decoration: none;
+}
+
+input {
+  font-size: 1.6rem;
+}
+/* --------------------------------
+
+hamburger CSS code
+
+-------------------------------- */
+.nav-trigger {
+	position: relative;
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+.nav-trigger span, 
+.nav-trigger span::before, 
+.nav-trigger span::after {
+	position: absolute;
+	display: inline-block;
+	height: 1px;
+	width: 45px;
+	background: #6c7782;
+}
+.nav-trigger span {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transition: background 0.2s;
+}
+.nav-trigger span::before, 
+.nav-trigger span::after {
+	content: '';
+	right: 0;
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-origin: 0% 50%;
+	transition: transform 0.2s;
+}
+.nav-trigger span::before {
+	top: -9px;
+}
+.nav-trigger span::after {
+	top: 9px;
+}
+.nav-trigger.nav-is-visible span {
+	background: rgba(255, 255, 255, 0);
+}
+.nav-trigger.nav-is-visible span::before, 
+.nav-trigger.nav-is-visible span::after {
+	background: #6c7782;
+}
+.nav-trigger.nav-is-visible span::before {
+	transform: translateX(4px) translateY(-12px) rotate(45deg);
+}
+.nav-trigger.nav-is-visible span::after {
+	transform: translateX(4px) translateY(2px) rotate(-45deg);
+}
+/* -------------------------------- 
+
+Header
+
+-------------------------------- */
+.uhf-main-header {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.um-main-content::before {
+	display: none;
+	content: 'mobile';
+}
+/* -------------------------------- 
+
+UHF Search Code
+
+-------------------------------- */
+.uhf-search {
+  position: relative;
+}
+.uhf-search.is-hidden {
+  opacity: 0;
+}
+.uhf-search::before {
+  /* lens icon */
+  content: '';
+  position: absolute;
+  right: 15px;
+  top:50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+  background: url('https://community.anaplan.com/html/assets/button_search.svg') no-repeat 0 0;
+}
+@media only screen and (max-width: 767px) {
+	.uhf-search::before {
+	  /* lens icon */
+	  right: 25px;
+   }
+  
+}
+.uhf-search input {
+  padding-left: 18px;
+  padding-right:40px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.uhf-search input:focus {
+  outline: none;
+}
+
+.uhf-search .btn-search {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+    width: 45px;
+    height: 38px;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+	cursor:  pointer;
+}
+
+.uhf-search input {
+	background-color: #eff1f3;
+  color: #6c7782;
+  font-family: GothamBook;
+  font-size: 16px;
+	width:100%;
+	height:40px;
+}
+input[type=search] {
+    /*-webkit-appearance: none; dont disable search.*/
+    color: #6c7782;
+}
+
+.topicContent{
+    margin-left: 80px;
+    margin-top: 2px;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.sub-element {
+    background-color: #0b2265;
+    position: absolute;
+    height: 108px;
+    width: 80px;
+    z-index: 9999;
+    left: 0;
+}
+/* -------------------------------- 
+
+Sidebar Navigation CSS Code
+
+-------------------------------- */
+.um-root-menu .menu-icon:hover {
+	text-decoration: none;
+}
+.um-side-nav {
+	position: absolute;
+	z-index: 1049;
+	left: 0;
+	top: 0;
+	padding: 75px 0 0;
+	background-color: #6c7782;
+	visibility: hidden;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.um-side-nav.nav-is-visible {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+	-webkit-overflow-scrolling: touch;
+	transition: opacity 0.2s 0s, visibility 0s 0s;
+	max-height: none;
+}
+.um-side-nav .li-last-element{
+	margin-bottom: 330px;
+}
+.um-side-nav a {
+	display: block;
+	padding: 1em 5%;
+}
+#um-left-nav .um-side-nav a {
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+	font-family: GothamBook;
+}
+.um-side-nav .menu-icon {
+	padding-left: calc(5% + 24px);
+	border-bottom: 1px solid #485058;
+}
+.um-root-menu .um-sub-menu {
+	position: relative;
+	width: 100%;
+	display: none;
+	background-color: #0b2265;
+}
+.um-root-menu.selected .um-sub-menu {
+	display: block;
+}
+.left-nav {
+	background-color: #6c7782;
+	padding-left: 0 !important;
+	margin: 0;
+}
+.um-sub-menu li {
+	line-height: 5px;
+}
+.um-root-menu {
+	border-top: 4px solid #6c7782;
+}
+@-moz-document url-prefix() { 
+	#um-left-nav .um-side-nav {
+		overflow: hidden; 
+	}
+	#um-left-nav .um-side-nav li ul {
+		overflow: auto; 
+	}
+	#um-left-nav .um-side-nav .left-nav {
+		width:97px;
+		height: 100%;
+		margin-right: 14px;
+		padding-right: 0;
+	}
+	#um-left-nav .um-root-menu .um-sub-menu {
+		position:fixed !important;	
+	}
+	.CoveoSearchbox .magic-box .magic-box-input > input {
+		color: #2E3032;
+	}
+}
+@supports (-moz-osx-font-smoothing:auto) {
+    #um-left-nav .um-side-nav .left-nav {
+        padding-right: 15px;
+	}
+	#um-left-nav .um-root-menu .um-sub-menu {
+		margin-left: -2px;
+	}
+}
+/* -------------------------------- 
+
+Footer CSS Code
+
+-------------------------------- */
+.uhf-links {
+	height: 108px;
+	background-color: #0b2265;
+    max-width: 1170px;
+    margin: 0 auto;
+	padding-top: 40px;
+}
+.uhf-copyright {
+	height: 37px;
+	background-color: #6c7782;
+	font-size: 12px;
+	box-shadow: 1px 1px 1px 1px #000;
+}
+.footer-logo-img {
+	width: 240px;
+	height: 34px;
+}
+.uhf-links a {
+	color: #fff;
+	font-size: 16px;
+	font-family: GothamBook;
+}
+.uhf-copyright a {
+	color: #fff;
+	font-size: 12px;
+	font-family: GothamBook;
+}
+.uhf-links .unf-element {
+	margin-left: 25px;
+}
+.uhf-copyright .copyright-element {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #fff;
+	display: inline-block;
+	font-family:GothamBook;
+	color: #fff;
+}
+.rights-reserved{
+	border-left:0;
+}
+#uhf-footer {
+	bottom: 0;
+	width: 100%;
+	z-index: 1050;
+	background-color: #0b2265;
+}
+.uhf-info,
+.anaplan-copyrights{
+	float: right;
+}
+.uhf-footer-logo{
+	float: left;
+}
+.uhf-sub-elements{
+    max-width: 1170px;
+    margin: 0 auto;
+	padding-top:10px;
+}
+.uhf-logo .uhf-logo-img {
+    width: 277px;
+    margin-left: 40px;
+    padding-top: 10px;
+    height: 36px;
+}
+.uhf-copyright .copyright-element {
+	border-left: 0;
+}
+.optanon-alert-box-wrapper {
+    z-index: 9999 !important;
+}
+/* -------------------------------- 
+
+Media Queries
+
+-------------------------------- */
+@media only screen and (max-width: 320px) {
+	.uhf-main-header #uhf-header .uhf-logo .uhf-logo-img {
+		padding-top: 8px;
+		width: 240px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	#uhf-header .uhf-logo .uhf-logo-img {
+		width: 290px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	/*Footer CSS code*/
+	#uhf-footer .uhf-copyright{
+		height: 47px
+	}
+	
+}
+@media only screen and (min-width: 768px) {
+	
+	/*Hamburger CSS code*/
+	.nav-trigger {
+		display: none;
+	}
+	
+	.um-side-nav {
+		padding-top: 80px;
+		padding-bottom: 145px;
+		width: 80px;
+		visibility: visible;
+		opacity: 1;
+		overflow: visible;
+		max-height: none;
+		height: 100%;
+		position: fixed;
+	}
+	.um-side-nav.is-fixed {
+		position: fixed;
+	}
+	.um-side-nav a {
+		font-size: 12px;
+		text-align: center;
+	}
+	.um-side-nav .menu-icon {
+		padding: calc(2.2em + 18px) 0 1.1em;
+	}
+	.um-side-nav .menu-icon::before {
+		position: absolute;
+		content: '';
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		top: 0.8em;
+	}
+	.um-root-menu .um-sub-menu {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 297px;
+		padding: 0;
+	}
+	.um-sub-menu a {
+		text-align: left;
+		border: 0;
+		padding: 1em;
+		font-size: 12px;
+	}
+	.um-main-content::before {
+		content: 'tablet';
+	}
+	/*Header CSS code*/
+	.uhf-main-header {
+		position: fixed;
+	}
+	.uhf-logo .uhf-logo-img {
+		width: 200px;
+	}
+	#uhf-header .uhf-content {
+		margin: 20px auto;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
+		width: 1170px;
+	}
+	.uhf-search.is-hidden {
+    /* reset style */
+    opacity: 1;
+  }
+	.uhf-search.is-hidden {
+		display: inline-block !important;
+	}
+	
+	/*Side nav*/
+	.left-nav {
+		-ms-overflow-style: none;
+		/* IE 10+ */
+		overflow: -moz-scrollbars-none;
+		/* Firefox */
+		overflow: -moz-hidden-unscrollable;
+	}
+	.left-nav::-webkit-scrollbar {
+		display: none;
+		/* Safari and Chrome; */
+	}
+	.left-nav {
+		width: 80px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+	.left-nav li {
+		position: static;
+	}
+/*Footer CSS code*/
+	.uhf-sub-elements .privacy-rights,
+	.uhf-sub-elements .terms-of-policy,
+	.uhf-sub-elements .cookie-policy,
+	.uhf-sub-elements .community-guidelines{
+		border-left: 1px solid #fff;
+	}
+}
+@media only screen and (min-width: 1170px) {
+	#uhf-header .uhf-search .coveo-search-section{
+		width: 391px;
+	}
+	.um-root-menu .um-sub-menu {
+		z-index: 999;
+	}
+	.um-root-menu ul a {
+		padding-left: 18px;
+	}
+	.um-side-nav .um-root-menu.hover > ul {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+	.uhf-logo .uhf-logo-img {
+		width: 320px;
+	}
+	.um-main-content::before {
+		content: 'desktop';
+	}
+	
+}
+@media only screen and (max-width: 767px) {
+	.um-side-nav.is-fixed {
+		bottom: unset !important;
+	}
+	.uhf-top-nav {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		    align-items: center;
+		-ms-flex-pack: center;
+		    justify-content: center;
+	}
+	.um-root-menu ul {
+		position: static;
+	}
+	.um-side-nav .left-nav {
+		padding :0;
+		margin :0;
+		width: 100%;
+	}
+	.um-side-nav {
+		width: 100%;
+	}
+	.uhf-logo {
+		float: right;
+		margin-right: 12px;
+		margin-top: 9px;
+	}
+	.uhf-search {
+		padding: 20px 17px 15px;
+	}
+	
+	/*Hamburger CSS code*/
+	.nav-trigger {
+        top: 10px;
+	}
+	
+	/*Left side Navigation CSS code*/
+	#uhf-header .uhf-logo .uhf-logo-img {
+		padding-top: 10px;
+		margin-top: 13px;
+	}
+	
+	.left-nav .um-root-menu .um-sub-menu {
+		position: static;
+	}
+	#um-left-nav .um-title {
+		display: none;
+	}
+	#anaplan-menu .um-side-nav .menu-icon {
+		padding-left: calc(2% + 24px);
+		border-bottom: 1px solid #373d44;
+		font-size: 16px;
+	}
+	.um-sub-menu li {
+		margin-left: 15px;
+	}
+	.um-side-nav.nav-is-visible {
+		background-color: #fff;
+	}
+	
+	@-moz-document url-prefix() { 
+		#um-left-nav .um-side-nav {
+			overflow: visible; 
+		}
+		#um-left-nav .um-side-nav li ul {
+			overflow: auto; 
+		}
+		#um-left-nav .um-side-nav .left-nav {
+			width:100%;
+			height: 100%;
+			margin-right: 0px;
+			padding-right: 0;
+		}
+		#um-left-nav .um-root-menu .um-sub-menu {
+			position:static !important;	
+		}
+		.CoveoSearchbox .magic-box .magic-box-input > input {
+			color: #2E3032;
+		}
+	}
+	
+	/*Footer CSS code*/
+	#uhf-footer {
+		border-top: 1px solid #fff;
+	}
+	#uhf-footer .uhf-copyright {
+		height: 97px;
+	}
+	#uhf-footer .uhf-links {
+		height: 207px;
+		margin-left: 20px;
+		padding-top: 0;
+	}
+	#uhf-footer .uhf-copyright .copyright-element {
+		margin-bottom: 10px;
+		padding-top: 0;
+		color: #fff;
+	}
+	#uhf-footer .rights-reserved{
+		width: 100%;
+	}
+	.copyright-element.terms-of-policy,
+	.copyright-element.cookie-policy{
+		border-left: 1px solid #fff;
+	}
+	.uhf-logo .uhf-logo-img {
+		width: 320px;
+	}
+	.uhf-main-header {
+		box-shadow: none;
+		border-bottom: 1px solid #99a4ae;
+	}
+	#uhf-footer .footer-logo-img,
+	#uhf-footer .uhf-info .uhf-info-elements {
+		margin-top: 30px;
+	}
+	#uhf-footer .uhf-links .unf-element {
+		margin: 0 35px 20px 0;
+		display: inline-block;
+	}
+	.uhf-copyright .privacy-rights {
+		border-left: 0;
+	}
+	.um-side-nav.nav-is-visible{
+		max-height: 330px;  
+	}
+	#lia-body #uhf-footer .footer-logo-img{
+		width: 160px;
+		margin-left: 0;
+	}
+   .anaplan-copyrights{
+        margin-left: 0;
+   }
+}
+@media only screen and (min-width: 1024px) {
+	
+	/*Left Navigation CSS code*/
+	.um-side-nav {
+		position: fixed;
+		height: 100%;
+	}
+	.um-sub-menu {
+		position: absolute;
+		z-index: 9999;
+		display: none;
+	}
+	.um-root-menu:hover .um-sub-menu {
+		display: block;
+	}
+}
+@media only screen and (min-width: 2560px) {
+	
+	/*Footer CSS code code*/	
+	#uhf-footer {
+		position: fixed;
+	}	
+}
+@media only screen and (min-width: 1140px){
+	#anaplan-footer .uhf-links,
+	#anaplan-footer .uhf-sub-elements,
+	#uhf-header .uhf-content {
+		max-width: 1245px;
+		padding-left: 40px
+	}
+}
+@media only screen and (max-width: 1152px){
+	.uhf-links,
+	.uhf-sub-elements,
+	#uhf-header .uhf-content {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 1170px) {
+	.uhf-search input {
+	    width: 491px;
+	    height: 40px;
+	}
+}
+/* -------------------------------- 
+
+Fonts
+
+-------------------------------- */
+
+/* Gotham fonts */
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('https://community.anaplan.com/html/assets/gotham-medium.eot'); /* IE9 Compat Modes */
+  src: url('https://community.anaplan.com/html/assets/gotham-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://community.anaplan.com/html/assets/gotham-medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://community.anaplan.com/html/assets/gotham-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'GothamBook';
+  src: url('https://community.anaplan.com/html/assets/gotham-book.eot'); /* IE9 Compat Modes */ 
+  src: url('https://community.anaplan.com/html/assets/gotham-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://community.anaplan.com/html/assets/gotham-book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://community.anaplan.com/html/assets/gotham-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://community.anaplan.com/html/assets/gotham-book.svg#svgFontName') format('svg'); /* Legacy iOS */;
+}
